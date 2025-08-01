@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10 text-center">
+        <h1 class="welcome-header mb-4">Welcome to Password Locker</h1>
+        <p class="welcome-text mb-5">A secure, modern way to store and manage all your passwords in one place. Never forget a password again!</p>
+        
+        <div class="d-flex justify-content-center gap-3 mb-5">
+            <a class="btn btn-primary btn-lg" href="{{ url_for('login') }}">
+                <i class="bi bi-shield-lock me-2"></i>Get Started
+            </a>
+            <a class="btn btn-outline-secondary btn-lg" href="{{ url_for('register') }}">
+                <i class="bi bi-person-plus me-2"></i>Create Account
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5 g-4">
+    <div class="col-md-4">
+        <div class="card feature-card shadow-sm">
+            <div class="feature-icon">
+                <i class="bi bi-shield-check"></i>
+            </div>
+            <h3>Secure Storage</h3>
+            <p>All your passwords are encrypted using industry-standard encryption algorithms, ensuring your data remains secure.</p>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card feature-card shadow-sm">
+            <div class="feature-icon">
+                <i class="bi bi-laptop"></i>
+            </div>
+            <h3>Easy Access</h3>
+            <p>Access your passwords from anywhere, anytime. Just log in to your account and all your credentials are at your fingertips.</p>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card feature-card shadow-sm">
+            <div class="feature-icon">
+                <i class="bi bi-gear"></i>
+            </div>
+            <h3>Simple Management</h3>
+            <p>Easily add, edit, or delete your password entries with our intuitive user interface designed for simplicity.</p>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5 pt-4 border-top">
+    <div class="col-12 text-center">
+        <h4 class="mb-4">Why Choose Password Locker?</h4>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-transparent"><i class="bi bi-check-circle-fill text-success me-2"></i> Strong encryption to keep your data safe</li>
+                    <li class="list-group-item bg-transparent"><i class="bi bi-check-circle-fill text-success me-2"></i> User-friendly interface for easy management</li>
+                    <li class="list-group-item bg-transparent"><i class="bi bi-check-circle-fill text-success me-2"></i> Completely free to use</li>
+                    <li class="list-group-item bg-transparent"><i class="bi bi-check-circle-fill text-success me-2"></i> No data sharing with third parties</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
